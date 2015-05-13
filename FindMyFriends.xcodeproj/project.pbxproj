@@ -14,6 +14,14 @@
 		39A691971B03B84C00C37436 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39A691961B03B84C00C37436 /* Images.xcassets */; };
 		39A6919A1B03B84C00C37436 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39A691981B03B84C00C37436 /* LaunchScreen.xib */; };
 		39A691A61B03B84C00C37436 /* FindMyFriendsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A691A51B03B84C00C37436 /* FindMyFriendsTests.m */; };
+		39A691B11B03BBFA00C37436 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A691B01B03BBFA00C37436 /* LoginViewController.m */; };
+		39A691B31B03BC9100C37436 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A691B21B03BC9100C37436 /* CoreLocation.framework */; };
+		39A691B51B03BCA100C37436 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A691B41B03BCA100C37436 /* MapKit.framework */; };
+		39A691B81B03BFEA00C37436 /* NewUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A691B71B03BFEA00C37436 /* NewUserViewController.m */; };
+		39A691BC1B03C95E00C37436 /* WallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A691BB1B03C95E00C37436 /* WallViewController.m */; };
+		39A691C11B03D02900C37436 /* WallPostTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A691C01B03D02900C37436 /* WallPostTableViewController.m */; };
+		39A691C41B03D05F00C37436 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A691C31B03D05F00C37436 /* SettingsViewController.m */; };
+		39A691C71B03D08A00C37436 /* WallPostCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A691C61B03D08A00C37436 /* WallPostCreateViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +48,20 @@
 		39A6919F1B03B84C00C37436 /* FindMyFriendsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyFriendsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39A691A41B03B84C00C37436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39A691A51B03B84C00C37436 /* FindMyFriendsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindMyFriendsTests.m; sourceTree = "<group>"; };
+		39A691AF1B03BBFA00C37436 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		39A691B01B03BBFA00C37436 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		39A691B21B03BC9100C37436 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		39A691B41B03BCA100C37436 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		39A691B61B03BFEA00C37436 /* NewUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewUserViewController.h; sourceTree = "<group>"; };
+		39A691B71B03BFEA00C37436 /* NewUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewUserViewController.m; sourceTree = "<group>"; };
+		39A691BA1B03C95E00C37436 /* WallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallViewController.h; sourceTree = "<group>"; };
+		39A691BB1B03C95E00C37436 /* WallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallViewController.m; sourceTree = "<group>"; };
+		39A691BF1B03D02900C37436 /* WallPostTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallPostTableViewController.h; sourceTree = "<group>"; };
+		39A691C01B03D02900C37436 /* WallPostTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallPostTableViewController.m; sourceTree = "<group>"; };
+		39A691C21B03D05F00C37436 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		39A691C31B03D05F00C37436 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		39A691C51B03D08A00C37436 /* WallPostCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallPostCreateViewController.h; sourceTree = "<group>"; };
+		39A691C61B03D08A00C37436 /* WallPostCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallPostCreateViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39A691B51B03BCA100C37436 /* MapKit.framework in Frameworks */,
+				39A691B31B03BC9100C37436 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +87,9 @@
 		39A6917D1B03B84C00C37436 = {
 			isa = PBXGroup;
 			children = (
+				39A691B91B03C7BA00C37436 /* Controllers */,
+				39A691B41B03BCA100C37436 /* MapKit.framework */,
+				39A691B21B03BC9100C37436 /* CoreLocation.framework */,
 				39A691881B03B84C00C37436 /* FindMyFriends */,
 				39A691A21B03B84C00C37436 /* FindMyFriendsTests */,
 				39A691871B03B84C00C37436 /* Products */,
@@ -117,6 +144,49 @@
 				39A691A41B03B84C00C37436 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		39A691B91B03C7BA00C37436 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				39A691BD1B03CFB100C37436 /* new user/login */,
+				39A691BE1B03CFF300C37436 /* view and posts */,
+				39A691C81B03D0AE00C37436 /* settings */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		39A691BD1B03CFB100C37436 /* new user/login */ = {
+			isa = PBXGroup;
+			children = (
+				39A691AF1B03BBFA00C37436 /* LoginViewController.h */,
+				39A691B01B03BBFA00C37436 /* LoginViewController.m */,
+				39A691B61B03BFEA00C37436 /* NewUserViewController.h */,
+				39A691B71B03BFEA00C37436 /* NewUserViewController.m */,
+			);
+			name = "new user/login";
+			sourceTree = "<group>";
+		};
+		39A691BE1B03CFF300C37436 /* view and posts */ = {
+			isa = PBXGroup;
+			children = (
+				39A691BA1B03C95E00C37436 /* WallViewController.h */,
+				39A691BB1B03C95E00C37436 /* WallViewController.m */,
+				39A691BF1B03D02900C37436 /* WallPostTableViewController.h */,
+				39A691C01B03D02900C37436 /* WallPostTableViewController.m */,
+				39A691C51B03D08A00C37436 /* WallPostCreateViewController.h */,
+				39A691C61B03D08A00C37436 /* WallPostCreateViewController.m */,
+			);
+			name = "view and posts";
+			sourceTree = "<group>";
+		};
+		39A691C81B03D0AE00C37436 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				39A691C21B03D05F00C37436 /* SettingsViewController.h */,
+				39A691C31B03D05F00C37436 /* SettingsViewController.m */,
+			);
+			name = settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +289,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39A691BC1B03C95E00C37436 /* WallViewController.m in Sources */,
+				39A691B11B03BBFA00C37436 /* LoginViewController.m in Sources */,
 				39A691921B03B84C00C37436 /* ViewController.m in Sources */,
+				39A691C41B03D05F00C37436 /* SettingsViewController.m in Sources */,
+				39A691C71B03D08A00C37436 /* WallPostCreateViewController.m in Sources */,
 				39A6918F1B03B84C00C37436 /* AppDelegate.m in Sources */,
 				39A6918C1B03B84C00C37436 /* main.m in Sources */,
+				39A691C11B03D02900C37436 /* WallPostTableViewController.m in Sources */,
+				39A691B81B03BFEA00C37436 /* NewUserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
