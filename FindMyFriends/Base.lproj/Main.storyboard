@@ -23,15 +23,15 @@
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6No-yq-C9h">
                                         <rect key="frame" x="0.0" y="215" width="320" height="60"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user-male-40" translatesAutoresizingMaskIntoConstraints="NO" id="6h9-Is-EZD">
-                                                <rect key="frame" x="8" y="10" width="40" height="40"/>
-                                            </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0hC-sM-GdY">
                                                 <rect key="frame" x="56" y="10" width="256" height="40"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="username-32" translatesAutoresizingMaskIntoConstraints="NO" id="6h9-Is-EZD">
+                                                <rect key="frame" x="8" y="14" width="32" height="32"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
                                     </view>
@@ -44,8 +44,8 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="password-40" translatesAutoresizingMaskIntoConstraints="NO" id="WV9-9p-uFc">
-                                                <rect key="frame" x="8" y="10" width="40" height="40"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Password-32" translatesAutoresizingMaskIntoConstraints="NO" id="WV9-9p-uFc">
+                                                <rect key="frame" x="8" y="14" width="32" height="32"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
@@ -58,6 +58,9 @@
                                             <color key="titleColor" red="0.35686274509999999" green="0.47058823529999999" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="rHS-kN-vYs" kind="modal" id="cyh-ze-NaS"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvk-Wk-HmT">
                                         <rect key="frame" x="113" y="362" width="57" height="30"/>
@@ -67,8 +70,11 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enter-40" translatesAutoresizingMaskIntoConstraints="NO" id="eIK-ho-X6c">
-                                        <rect key="frame" x="167" y="357" width="40" height="40"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Meeting-100-white" translatesAutoresizingMaskIntoConstraints="NO" id="0wO-ae-aQe">
+                                        <rect key="frame" x="110" y="76" width="100" height="100"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Login-32" translatesAutoresizingMaskIntoConstraints="NO" id="eIK-ho-X6c">
+                                        <rect key="frame" x="164" y="361" width="32" height="32"/>
                                     </imageView>
                                 </subviews>
                             </scrollView>
@@ -271,9 +277,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="enter-40" width="40" height="40"/>
+        <image name="Login-32" width="32" height="32"/>
+        <image name="Meeting-100-white" width="100" height="100"/>
+        <image name="Password-32" width="32" height="32"/>
         <image name="password-40" width="40" height="40"/>
         <image name="user-male-40" width="40" height="40"/>
+        <image name="username-32" width="32" height="32"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
