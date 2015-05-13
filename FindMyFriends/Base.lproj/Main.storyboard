@@ -54,12 +54,12 @@
                                         <rect key="frame" x="0.0" y="520" width="320" height="48"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                        <state key="normal" title="Sign Up">
+                                        <state key="normal" title="Sign-Up">
                                             <color key="titleColor" red="0.35686274509999999" green="0.47058823529999999" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="rHS-kN-vYs" kind="modal" id="cyh-ze-NaS"/>
+                                            <segue destination="rHS-kN-vYs" kind="modal" identifier="createAccount" id="cyh-ze-NaS"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvk-Wk-HmT">
@@ -173,7 +173,7 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user-male-40" translatesAutoresizingMaskIntoConstraints="NO" id="fw2-XG-SJo">
                                         <rect key="frame" x="8" y="10" width="40" height="40"/>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="create username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WsM-HW-ltv">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="create username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WsM-HW-ltv">
                                         <rect key="frame" x="61" y="15" width="251" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -187,7 +187,7 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="password-40" translatesAutoresizingMaskIntoConstraints="NO" id="OFM-ts-4bX">
                                         <rect key="frame" x="8" y="10" width="40" height="40"/>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="create password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vsC-ep-ldU">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="create password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vsC-ep-ldU">
                                         <rect key="frame" x="56" y="15" width="256" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -201,7 +201,7 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="password-40" highlightedImage="password-40" translatesAutoresizingMaskIntoConstraints="NO" id="Ozb-uh-Ch7">
                                         <rect key="frame" x="8" y="10" width="40" height="40"/>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bai-Fp-1Ag">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="confirm password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bai-Fp-1Ag">
                                         <rect key="frame" x="56" y="15" width="256" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
