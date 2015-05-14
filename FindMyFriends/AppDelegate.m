@@ -27,6 +27,11 @@
                   clientKey:@"fUfz2vF2iVP9d3U2w7W3XG3iaxY026tTUvVvuHEg"];
     
 
+    //Analytics
+    
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    
     return YES;
 }
 
