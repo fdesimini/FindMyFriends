@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3970C8261B05036B00A64CA0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3970C8241B05036B00A64CA0 /* Bolts.framework */; };
+		3970C8271B05036B00A64CA0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3970C8251B05036B00A64CA0 /* Parse.framework */; };
+		3970C8291B05161800A64CA0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3970C8281B05161800A64CA0 /* CFNetwork.framework */; };
+		3970C82B1B0516DD00A64CA0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3970C82A1B0516DD00A64CA0 /* AudioToolbox.framework */; };
+		3970C82D1B0516ED00A64CA0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3970C82C1B0516ED00A64CA0 /* SystemConfiguration.framework */; };
+		3970C82F1B0516F800A64CA0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3970C82E1B0516F800A64CA0 /* StoreKit.framework */; };
+		3970C8311B05170000A64CA0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3970C8301B05170000A64CA0 /* Security.framework */; };
+		3970C8331B05170C00A64CA0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3970C8321B05170C00A64CA0 /* QuartzCore.framework */; };
+		3970C8351B05171C00A64CA0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3970C8341B05171C00A64CA0 /* MobileCoreServices.framework */; };
+		3970C8371B05172B00A64CA0 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3970C8361B05172B00A64CA0 /* libsqlite3.dylib */; };
+		3970C8391B05173600A64CA0 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3970C8381B05173600A64CA0 /* libz.1.1.3.dylib */; };
+		3970C83B1B05175100A64CA0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3970C83A1B05175100A64CA0 /* CoreGraphics.framework */; };
 		39A6918C1B03B84C00C37436 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A6918B1B03B84C00C37436 /* main.m */; };
 		39A6918F1B03B84C00C37436 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A6918E1B03B84C00C37436 /* AppDelegate.m */; };
 		39A691921B03B84C00C37436 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A691911B03B84C00C37436 /* ViewController.m */; };
@@ -35,6 +47,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3970C8241B05036B00A64CA0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../Desktop/3rd Party Frameworks/Parse/parse-library-1.7.2/Bolts.framework"; sourceTree = "<group>"; };
+		3970C8251B05036B00A64CA0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../Desktop/3rd Party Frameworks/Parse/parse-library-1.7.2/Parse.framework"; sourceTree = "<group>"; };
+		3970C8281B05161800A64CA0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		3970C82A1B0516DD00A64CA0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3970C82C1B0516ED00A64CA0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3970C82E1B0516F800A64CA0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		3970C8301B05170000A64CA0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3970C8321B05170C00A64CA0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3970C8341B05171C00A64CA0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3970C8361B05172B00A64CA0 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		3970C8381B05173600A64CA0 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		3970C83A1B05175100A64CA0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		39A691861B03B84C00C37436 /* FindMyFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39A6918A1B03B84C00C37436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39A6918B1B03B84C00C37436 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -69,6 +93,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3970C83B1B05175100A64CA0 /* CoreGraphics.framework in Frameworks */,
+				3970C8391B05173600A64CA0 /* libz.1.1.3.dylib in Frameworks */,
+				3970C8371B05172B00A64CA0 /* libsqlite3.dylib in Frameworks */,
+				3970C8351B05171C00A64CA0 /* MobileCoreServices.framework in Frameworks */,
+				3970C8331B05170C00A64CA0 /* QuartzCore.framework in Frameworks */,
+				3970C8311B05170000A64CA0 /* Security.framework in Frameworks */,
+				3970C82F1B0516F800A64CA0 /* StoreKit.framework in Frameworks */,
+				3970C82D1B0516ED00A64CA0 /* SystemConfiguration.framework in Frameworks */,
+				3970C82B1B0516DD00A64CA0 /* AudioToolbox.framework in Frameworks */,
+				3970C8291B05161800A64CA0 /* CFNetwork.framework in Frameworks */,
+				3970C8261B05036B00A64CA0 /* Bolts.framework in Frameworks */,
+				3970C8271B05036B00A64CA0 /* Parse.framework in Frameworks */,
 				39A691B51B03BCA100C37436 /* MapKit.framework in Frameworks */,
 				39A691B31B03BC9100C37436 /* CoreLocation.framework in Frameworks */,
 			);
@@ -87,6 +123,18 @@
 		39A6917D1B03B84C00C37436 = {
 			isa = PBXGroup;
 			children = (
+				3970C83A1B05175100A64CA0 /* CoreGraphics.framework */,
+				3970C8381B05173600A64CA0 /* libz.1.1.3.dylib */,
+				3970C8361B05172B00A64CA0 /* libsqlite3.dylib */,
+				3970C8341B05171C00A64CA0 /* MobileCoreServices.framework */,
+				3970C8321B05170C00A64CA0 /* QuartzCore.framework */,
+				3970C8301B05170000A64CA0 /* Security.framework */,
+				3970C82E1B0516F800A64CA0 /* StoreKit.framework */,
+				3970C82C1B0516ED00A64CA0 /* SystemConfiguration.framework */,
+				3970C82A1B0516DD00A64CA0 /* AudioToolbox.framework */,
+				3970C8281B05161800A64CA0 /* CFNetwork.framework */,
+				3970C8241B05036B00A64CA0 /* Bolts.framework */,
+				3970C8251B05036B00A64CA0 /* Parse.framework */,
 				39A691B91B03C7BA00C37436 /* Controllers */,
 				39A691B41B03BCA100C37436 /* MapKit.framework */,
 				39A691B21B03BC9100C37436 /* CoreLocation.framework */,
@@ -423,6 +471,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/frankdesimini/Desktop/3rd,
+					Party,
+					"Frameworks/Parse/parse-library-1.7.2",
+				);
 				INFOPLIST_FILE = FindMyFriends/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -433,6 +487,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/frankdesimini/Desktop/3rd,
+					Party,
+					"Frameworks/Parse/parse-library-1.7.2",
+				);
 				INFOPLIST_FILE = FindMyFriends/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -492,6 +552,7 @@
 				39A691AB1B03B84C00C37436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39A691AC1B03B84C00C37436 /* Build configuration list for PBXNativeTarget "FindMyFriendsTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +561,7 @@
 				39A691AE1B03B84C00C37436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

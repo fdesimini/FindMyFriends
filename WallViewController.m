@@ -16,7 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // showing the navigation bar (it was turned off from previous VC
+    [[self navigationController] setNavigationBarHidden:NO animated:YES];
+    // removing the back button on the navigation bar - i don't want to go back to login screen
+    self.navigationItem.hidesBackButton = YES;
+    
+
 }
 
 - (void)didReceiveMemoryWarning {
