@@ -7,6 +7,7 @@
 //
 
 #import "NewUserViewController.h"
+#import <Parse/Parse.h>
 
 @interface NewUserViewController ()
 
@@ -16,8 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
+    
+        [self.createUsernameTextfield becomeFirstResponder];
+    
+   }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -34,4 +37,22 @@
 }
 */
 
+- (IBAction)createAccount:(id)sender {
+    
+    //Parse object - STORING DATA
+    PFObject *createAccount =[PFObject objectWithClassName:@"CreateAccount"];
+    [createAccount setObject:@"franktest" forKey:@"username"];
+    [createAccount setObject:@"12345" forKey:@"password"];
+    [createAccount setObject:@"12345" forKey:@"confirmPassword"];
+    [createAccount saveInBackground];
+    
+//    [self prepareForSegue:<#(UIStoryboardSegue *)#> sender:<#(id)#>]
+    
+    
+}
+
+- (IBAction)cancel:(id)sender {
+    
+    
+}
 @end

@@ -18,19 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    // Parse initialization
-    [Parse setApplicationId:@"SS8vBY9UeR8o7ogPrqYTXv55yjZXLaMjBELbUyUh"
-                  clientKey:@"fUfz2vF2iVP9d3U2w7W3XG3iaxY026tTUvVvuHEg"];
-
-    
-    //Parse object - STORING DATA
-    PFObject *myLogin =[PFObject objectWithClassName:@"Login"];
-    [myLogin setObject:@"Frank Desimini" forKey:@"username"];
-    [myLogin setObject:@"90210" forKey:@"password"];
-    [myLogin saveInBackground];
-
-    
+        
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -43,8 +31,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
 
 
 //- (void)processFieldEntries {
@@ -145,7 +131,14 @@
 
 - (IBAction)loginButton:(UIButton *)sender {
     
-    [self.view endEditing:YES];
+    //Parse object - STORING DATA
+    PFObject *myLogin =[PFObject objectWithClassName:@"Login"];
+    [myLogin setObject:_userName.text forKey:@"username"];
+    [myLogin setObject:_passWord.text forKey:@"password"];
+    [myLogin saveInBackground];
+
+    
+//    [self.view endEditing:YES];
     
 }
 
