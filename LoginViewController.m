@@ -132,10 +132,24 @@
 - (IBAction)loginButton:(UIButton *)sender {
     
     //Parse object - STORING DATA
-    PFObject *myLogin =[PFObject objectWithClassName:@"Login"];
+    /*PFObject *myLogin =[PFObject objectWithClassName:@"Login"];
     [myLogin setObject:_userName.text forKey:@"username"];
     [myLogin setObject:_passWord.text forKey:@"password"];
-    [myLogin saveInBackground];
+    [myLogin saveInBackground];*/
+    
+    [PFUser logInWithUsernameInBackground:_userName.text password:_passWord.text
+                                    block:^(PFUser *user, NSError *error) {
+                                        if (user) {
+                                            // Do stuff after successful login.
+                                            // load view map controller
+                                            NSLog(@"Logged In");
+                                        } else {
+                                            // The login failed. Check error to see why.
+                                            // missed something or sign up contorller
+                                            NSLog(@"Logged In Failed");
+                                            
+                                        }
+                                    }];
 
     
 //    [self.view endEditing:YES];

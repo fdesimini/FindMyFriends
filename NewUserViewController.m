@@ -53,12 +53,39 @@
     
     //PFUser
     
-//    PFUser *createUser = [PFUser user];
-//    createUser.username = _createUsernameTextfield.text;
-//    createUser.password = _createPasswordTextfield.text;
-//    [createUser saveInBackground];
+    PFUser *createUser = [PFUser user];
+    createUser.username = _createUsernameTextfield.text ;
+    createUser.password = _createPasswordTextfield.text;
 
     
+    //[createUser saveInBackground];
+    // check signed up already
+    
+    /*
+    [createUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (!error) {   // Hooray! Let them use the app now.
+            NSLog(@"Test Authentication");
+        } else {
+            NSString *errorString = [error userInfo][@"error"];
+            // Show the errorString somewhere and let the user try again.
+        }
+    }];*/
+    
+    [createUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (!error) {   // Hooray! Let them use the app now.
+            NSLog(@"Your are now signed up");
+//            NSLog(@"@%", createUser.username);
+//            NSLog(@"@%", createUser.password);
+            /* User has signed up present view controller */
+        } else
+        {
+//            NSString *errorString = [error userInfo][@"error"];
+            // Show the errorString somewhere and let the user try again.
+        }
+    }];
+   
+
+    //
 }
 
 - (IBAction)cancel:(id)sender {
