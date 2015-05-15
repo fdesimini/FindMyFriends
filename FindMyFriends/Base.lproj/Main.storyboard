@@ -44,7 +44,7 @@
                                 </state>
                                 <connections>
                                     <action selector="signUp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="r7W-Sq-jf6"/>
-                                    <segue destination="rHS-kN-vYs" kind="modal" identifier="createAccountSegue" id="cyh-ze-NaS"/>
+                                    <segue destination="rHS-kN-vYs" kind="push" id="3wa-Ne-1o2"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Meeting-100-white" translatesAutoresizingMaskIntoConstraints="NO" id="0wO-ae-aQe">
@@ -188,7 +188,7 @@
             </objects>
             <point key="canvasLocation" x="953" y="735"/>
         </scene>
-        <!--New User View Controller-->
+        <!--Create Account-->
         <scene sceneID="hEd-oj-dUE">
             <objects>
                 <viewController id="rHS-kN-vYs" customClass="NewUserViewController" sceneMemberID="viewController">
@@ -201,7 +201,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qbr-Dn-BUy">
-                                <rect key="frame" x="0.0" y="39" width="320" height="60"/>
+                                <rect key="frame" x="0.0" y="72" width="320" height="60"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user-male-40" translatesAutoresizingMaskIntoConstraints="NO" id="fw2-XG-SJo">
                                         <rect key="frame" x="8" y="10" width="40" height="40"/>
@@ -215,7 +215,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MTJ-yM-YjR">
-                                <rect key="frame" x="0.0" y="107" width="320" height="60"/>
+                                <rect key="frame" x="0.0" y="140" width="320" height="60"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="password-40" translatesAutoresizingMaskIntoConstraints="NO" id="OFM-ts-4bX">
                                         <rect key="frame" x="8" y="10" width="40" height="40"/>
@@ -229,7 +229,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2uY-6k-wh4">
-                                <rect key="frame" x="0.0" y="175" width="320" height="60"/>
+                                <rect key="frame" x="0.0" y="208" width="320" height="60"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="password-40" highlightedImage="password-40" translatesAutoresizingMaskIntoConstraints="NO" id="Ozb-uh-Ch7">
                                         <rect key="frame" x="8" y="10" width="40" height="40"/>
@@ -243,7 +243,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CoG-oG-0Ha">
-                                <rect key="frame" x="90" y="243" width="140" height="34"/>
+                                <rect key="frame" x="90" y="276" width="140" height="34"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -251,23 +251,12 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccount:" destination="rHS-kN-vYs" eventType="touchUpInside" id="0An-Pv-vhJ"/>
-                                    <segue destination="vgZ-8a-vAD" kind="custom" identifier="createdAccount" id="cYP-8d-gxL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ph8-lw-Gh6">
-                                <rect key="frame" x="90" y="285" width="140" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" title="Cancel">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="cancel:" destination="rHS-kN-vYs" eventType="touchUpInside" id="pmH-AN-DdC"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.35686274509999999" green="0.47058823529999999" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Create Account" id="3Pe-c2-GJa"/>
                     <connections>
                         <outlet property="confirmPasswordTextfield" destination="Bai-Fp-1Ag" id="Kx0-U8-JQB"/>
                         <outlet property="createPasswordTextfield" destination="vsC-ep-ldU" id="VaF-Mg-X1J"/>
@@ -310,7 +299,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="cYP-8d-gxL"/>
-    </inferredMetricsTieBreakers>
 </document>
