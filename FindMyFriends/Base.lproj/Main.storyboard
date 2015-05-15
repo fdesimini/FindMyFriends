@@ -251,7 +251,6 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccount:" destination="rHS-kN-vYs" eventType="touchUpInside" id="0An-Pv-vhJ"/>
-                                    <segue destination="vgZ-8a-vAD" kind="custom" identifier="createdAccount" id="cYP-8d-gxL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ph8-lw-Gh6">
@@ -310,7 +309,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="cYP-8d-gxL"/>
-    </inferredMetricsTieBreakers>
 </document>

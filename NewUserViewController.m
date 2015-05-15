@@ -32,24 +32,32 @@
 
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-    
-    [segue.destinationViewController isKindOfClass:[WallViewController class]];
-}
+//// In a storyboard-based application, you will often want to do a little preparation before navigation
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    // Get the new view controller using [segue destinationViewController].
+//    // Pass the selected object to the new view controller.
+//    
+//    [segue.destinationViewController isKindOfClass:[WallViewController class]];
+//}
 
 
 - (IBAction)createAccount:(id)sender {
     
     //Parse object - STORING DATA
-    PFObject *createAccount =[PFObject objectWithClassName:@"CreateAccount"];
-    [createAccount setObject:_createUsernameTextfield.text forKey:@"username"];
-    [createAccount setObject:_createPasswordTextfield.text forKey:@"password"];
-    [createAccount setObject:_confirmPasswordTextfield.text forKey:@"confirmPassword"];
-    [createAccount saveInBackground];
+
+//    PFObject *createAccount =[PFObject objectWithClassName:@"CreateAccount"];
+//    [createAccount setObject:_createUsernameTextfield.text forKey:@"username"];
+//    [createAccount setObject:_createPasswordTextfield.text forKey:@"password"];
+//    [createAccount setObject:_confirmPasswordTextfield.text forKey:@"confirmPassword"];
+//    [createAccount saveInBackground];
     
+    //PFUser
+    
+//    PFUser *createUser = [PFUser user];
+//    createUser.username = _createUsernameTextfield.text;
+//    createUser.password = _createPasswordTextfield.text;
+//    [createUser saveInBackground];
+
     
 }
 
