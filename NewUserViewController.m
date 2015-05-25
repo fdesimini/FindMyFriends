@@ -20,7 +20,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    
         [self.createUsernameTextfield becomeFirstResponder];
+    
+    
     
    }
 
@@ -43,14 +47,6 @@
 
 - (IBAction)createAccount:(id)sender {
     
-    //Parse object - STORING DATA
-
-//    PFObject *createAccount =[PFObject objectWithClassName:@"CreateAccount"];
-//    [createAccount setObject:_createUsernameTextfield.text forKey:@"username"];
-//    [createAccount setObject:_createPasswordTextfield.text forKey:@"password"];
-//    [createAccount setObject:_confirmPasswordTextfield.text forKey:@"confirmPassword"];
-//    [createAccount saveInBackground];
-    
     //PFUser
     
     PFUser *createUser = [PFUser user];
@@ -58,29 +54,25 @@
     createUser.password = _createPasswordTextfield.text;
 
     
-    //[createUser saveInBackground];
-    // check signed up already
-    
-    /*
-    [createUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if (!error) {   // Hooray! Let them use the app now.
-            NSLog(@"Test Authentication");
-        } else {
-            NSString *errorString = [error userInfo][@"error"];
-            // Show the errorString somewhere and let the user try again.
-        }
-    }];*/
-    
     [createUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error) {   // Hooray! Let them use the app now.
             NSLog(@"Your are now signed up");
 //            NSLog(@"@%", createUser.username);
 //            NSLog(@"@%", createUser.password);
             /* User has signed up present view controller */
+            
+//            WallViewController *vc = [[WallViewController alloc]init];
+            
+        
+            
+            
         } else
         {
 //            NSString *errorString = [error userInfo][@"error"];
             // Show the errorString somewhere and let the user try again.
+            
+            [self performSegueWithIdentifier:@"createdUser" sender:nil];
+            
         }
     }];
    
@@ -90,6 +82,7 @@
 
 - (IBAction)cancel:(id)sender {
     
+    [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 @end

@@ -131,12 +131,6 @@
 
 - (IBAction)loginButton:(UIButton *)sender {
     
-    //Parse object - STORING DATA
-    /*PFObject *myLogin =[PFObject objectWithClassName:@"Login"];
-    [myLogin setObject:_userName.text forKey:@"username"];
-    [myLogin setObject:_passWord.text forKey:@"password"];
-    [myLogin saveInBackground];*/
-    
     [PFUser logInWithUsernameInBackground:_userName.text password:_passWord.text
                                     block:^(PFUser *user, NSError *error) {
                                         if (user) {

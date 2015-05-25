@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="RoT-wC-ISq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
@@ -50,9 +50,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Meeting-100-white" translatesAutoresizingMaskIntoConstraints="NO" id="0wO-ae-aQe">
                                 <rect key="frame" x="109" y="20" width="100" height="100"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Login-32" translatesAutoresizingMaskIntoConstraints="NO" id="eIK-ho-X6c">
-                                <rect key="frame" x="156" y="276" width="32" height="32"/>
-                            </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6No-yq-C9h">
                                 <rect key="frame" x="0.0" y="140" width="320" height="60"/>
                                 <subviews>
@@ -77,7 +74,6 @@
                                 </state>
                                 <connections>
                                     <action selector="loginButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ctp-g9-bwF"/>
-                                    <segue destination="vgZ-8a-vAD" kind="push" identifier="login" id="QLa-BB-949"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -111,7 +107,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Xk2-xu-a2c">
-                                <rect key="frame" x="0.0" y="64" width="320" height="210"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" red="0.71764705882352942" green="0.74901960784313726" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
@@ -251,6 +247,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccount:" destination="rHS-kN-vYs" eventType="touchUpInside" id="0An-Pv-vhJ"/>
+                                    <segue destination="vgZ-8a-vAD" kind="modal" identifier="createdUser" id="fH4-ze-6fN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ph8-lw-Gh6">
@@ -277,27 +274,8 @@
             </objects>
             <point key="canvasLocation" x="953" y="56"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="mHM-ck-g86">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RoT-wC-ISq" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q9n-yR-TtS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="YTA-Uj-qEi"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6jQ-FA-DfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-26" y="56"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="Login-32" width="32" height="32"/>
         <image name="Meeting-100-white" width="100" height="100"/>
         <image name="Password-32" width="32" height="32"/>
         <image name="password-40" width="40" height="40"/>
